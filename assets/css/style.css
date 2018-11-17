@@ -1,0 +1,17 @@
+body {
+        font-family: 'Playball', cursive; 
+        padding: 0px 0px 0px 0px;
+        color: #223322;
+        margin: 0px 0px 0px 0px;
+        display: flex;
+        flex-direction: column;
+        background-image: url("../images/Psychic.jpg");
+
+
+
+}
+
+.psychic-game {
+    background-color: antiquewhite;
+
+}
