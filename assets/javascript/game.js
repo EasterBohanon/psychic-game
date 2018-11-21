@@ -8,7 +8,7 @@ var losses = 0;
 var guesses = 0;
 var guessesRemaining = 10;
 var guessedLetters = [];
-//  var lettersToGuess = null;
+var lettersToGuess = null;
 
 var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
 
@@ -17,7 +17,7 @@ console.log("This is what the computer picked: ", computerGuess);
 // Let's the user have 10 total guesses
 
 function reviseGuessesRemaining() {
-    document.querySelector('#guesses-left').innerHTML = "Guesses left:" + guessesRemaining;
+    document.getElementById('guesses-left').innerHTML = "Guesses left: " + guessesRemaining;
 };
 // Will update the amount of letters left to guess
 function reviseLetterToGuess() {
@@ -25,7 +25,7 @@ function reviseLetterToGuess() {
 };
 // Will display letters that have been entered by the user
 function reviseGuessesMade() {
-    document.querySelector('#guesses-so-far').innerHTML = "Your Guesses so far:" + guessedLetters.join(', ');
+    document.getElementById('guesses-so-far').innerHTML = "Your Guesses so far: " + guessedLetters.join(', ');
 };
 
 
@@ -47,7 +47,7 @@ reviseGuessesRemaining();
 
 // When the key is released it will be the User's guess
 
-document.onkeyup = function (event) {
+document.onkeyup= function (event) {
     var userGuess = event.key.toLowerCase();
 
     console.log("Letter that user guessed: ", userGuess);
@@ -60,7 +60,7 @@ document.onkeyup = function (event) {
     if (guessesRemaining == 0) {
         //When someone loses completely this will let them know and reset
         losses++;
-        document.querySelector('#Losses').innerHTML = "Losses:" + losses;
+        document.getElementById('Losses').innerHTML = "Losses:" + losses;
         alert("You didn't see this coming, but, you failed the Psychic test, you could try again ");
         reset();
 
@@ -75,7 +75,7 @@ else if (check) {
             wins++;
             alert("Well, it seems as if you maybe the chosen one. Can you do it again?");
             reset();
-         document.querySelector('#wins').innerHTML = "Wins:" + wins;
+         document.getElementById('wins').innerHTML = wins;
             
         }
     }
@@ -84,4 +84,6 @@ else if (check) {
         // alert("something is wrong, we have an error!");
     }
 };
+
+event();
 
