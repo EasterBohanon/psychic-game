@@ -5,13 +5,57 @@ body {
         margin: 0px 0px 0px 0px;
         display: flex;
         flex-direction: column;
-        background-image: url("../images/Psychic.jpg");
+        background-image: url("../images/space.jpg");
+        background-size: 100%; 
 
+
+    
 
 
 }
 
 .psychic-game {
     background-color: antiquewhite;
+    width: 100%;
+    position: fixed;
+    margin: 0 0 40px;
+
+
+
+}
+
+h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: blueviolet;
+    text-align: center;
+    font-size: 35px;
+    line-height: 55px;
+
+}
+
+h2 {
+    font-size: 30px;
+    text-align: center;
+    font-weight: strong; 
+
+}
+
+
+
+.stats{
+    background-color: aliceblue;
+    clear: both;
+    padding: 10px 0px 40px 0px;
+    
+   
+
+}
+
+p {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #1e0202;
+    text-align: center;
+    line-height: 24x;
+    font-size: 18px;
 
 }
